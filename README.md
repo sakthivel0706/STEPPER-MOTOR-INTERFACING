@@ -3,8 +3,6 @@
 ## AIM
 To write an assembly language program in 8086 to rotate the motor at different speeds.
 
----
-
 ## APPARATUS REQUIRED
 
 | S. No | Item                        | Specification   | Quantity |
@@ -67,9 +65,11 @@ L1:      DEC DX
 
          HLT                  ; Stop
 
-DATA:    DB 09H, 05H, 06H, 0AH ; Array of data
+DATA:    DB 09H, 05H, 06H, 0AH ; Array of data (Clockwise)
+            OAH, 06H, 05H, 09H ; Array of data (Anti-clockwise)
 ```
 ## OUTPUT OF THE PROGRAM:
+<img width="562" height="435" alt="image" src="https://github.com/user-attachments/assets/fcb823c1-84cf-46e8-b609-3cf7a8d3c341" />
 
 ## RESULT
 
